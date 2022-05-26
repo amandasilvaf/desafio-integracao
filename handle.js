@@ -1,11 +1,13 @@
+require('dotenv').config()
+
 const credentials = require('./credentials.json');
-const worksheet = require('./worksheet.json');
+const worksheetId = process.env.WORKSHEET_ID;
+const sheetTitle = process.env.SHEET_TITLE;
 
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 
 const hubspot = require('@hubspot/api-client');
-
-const hubspotApiKey = "d74cc52e-3436-457b-9b5e-af22f1b57f8f"
+const hubspotApiKey = process.env.HUBSPOT_API_KEY;
 const hubspotClient = new hubspot.Client({ "apiKey": hubspotApiKey });
 
 const validEmailValidator = require("email-validator");
@@ -38,7 +40,7 @@ async function getAllContactsFromHubSpot(){
 
 async function readSheet(){
 
-    const doc = new GoogleSpreadsheet(worksheet.id);
+    const doc = new GoogleSpreadsheet(worksheetId);
 
     await doc.useServiceAccountAuth({
         client_email: credentials.client_email,
@@ -47,7 +49,7 @@ async function readSheet(){
 
     await doc.loadInfo(); 
 
-    const sheet = doc.sheetsByTitle[worksheet.title]
+    const sheet = doc.sheetsByTitle[sheetTitle]
     const rows = await sheet.getRows();
 
     return rows;
@@ -101,10 +103,10 @@ function emailIsValid(email){
          if(corporateEmailValidator.isCompanyEmail(email)){
              return true
          }
-         console.log('This is not a corporate e-mail adress.')
+         console.log('Not corporate e-mail adress.')
          return false;
     }
-    console.log('Invalid e-mail adress format.'); 
+    console.log('Invalid e-mail adress.'); 
     return false 
 }
 
