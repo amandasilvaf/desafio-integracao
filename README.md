@@ -23,12 +23,12 @@ Conta no Hubspot.
 
 <div>
 <h5>Passo a passo resumido:</h5>
-<li>1 - clonar projeto</li>
-<li>2 - renomear .env-example para .env</li>
-<li>3 - seguir as instruções do item 3 para configurar a .env</li>
-<li>4 - rodar npm install</li>
-<li>5 - rodar npm run start</li>
-<li>6 - Criar credenciais de conta de serviço google e importá-la neste projeto com o nome "credentials.json" (apenas a partir de 09/06/2022).</li>
+<li> clonar projeto</li>
+<li> renomear .env-example para .env</li>
+<li> seguir as instruções do item 3 para configurar a .env</li>
+<li> Criar credenciais de conta de serviço google e importá-la neste projeto com o nome "credentials.json" .</li>
+<li> rodar npm install</li>
+<li> rodar npm run start</li>
 </div>
 
 
@@ -104,8 +104,8 @@ SHEET_TITLE = "Página1"
 ##### Pronto, agora suas variáveis de ambiente estão setadas. Salve as alterações do arquivo .env, e feche-o.
 
 
-### Atenção!!!
-#### Este projeto já está com uma credencial google importada (credentials.json). Para que o desafio possa ser executado sem que haja necessidade dessa configuração. Porém essa não é uma boa prática de programação e segurança. Portanto, em 15 dias irei tirar esse arquivo deste repositório (em 09/06/22). E, a partir de então, será necessário configurar uma conta de serviço google e importá-la neste projeto. Para isso, siga as instruções do item 5. 
+<!-- ### Atenção!!!
+#### Este projeto já está com uma credencial google importada (credentials.json). Para que o desafio possa ser executado sem que haja necessidade dessa configuração. Porém essa não é uma boa prática de programação e segurança. Portanto, em 15 dias irei tirar esse arquivo deste repositório (em 09/06/22). E, a partir de então, será necessário configurar uma conta de serviço google e importá-la neste projeto. Para isso, siga as instruções do item 5.  -->
 
 
 
