@@ -1,10 +1,10 @@
-# Desafio Integração 
+<h2>Desafio Integração</h2>
 <div>
    Esta aplicação irá importar os contatos da sua planilha google spreadsheet na sua conta do Hubspot.
 </div>
 
 
-## Requisitos: 
+<h4>Requisitos:</h4>
 
 <div>
 <ul>
@@ -54,6 +54,7 @@ Conta no Hubspot.
         Acesse o site https://app.hubspot.com , e faça o login. 
 
         Clique no botão de configurações, localizado no menu superior. 
+        <img src="images/hubspot-botao-config.png"></img>
         ![alt text](images/hubspot-botao-config.png)
 
         Agora role pelo menu lateral até "Configurações de conta", clique no submenu dropdown "Integrações" e selecione "Chave de API":
