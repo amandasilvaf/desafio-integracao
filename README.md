@@ -42,10 +42,10 @@ Conta no Hubspot.
 
 3- No arquivo .env estão definidas 3 variáveis de ambientes:
 
-   HUBSPOT_API_KEY = "your hubspot apikey comes here"
-   WORKSHEET_ID = "the id of your google spreadsheet comes here."
-   SHEET_TITLE = "the title of your google spreadsheet comes here." 
-
+<br>HUBSPOT_API_KEY = "your hubspot apikey comes here"
+<br>WORKSHEET_ID = "the id of your google spreadsheet comes here."
+<br>SHEET_TITLE = "the title of your google spreadsheet comes here." 
+<br>
 Você deverá setar esses valores, ou seja, atribuir valores reais às variáveis HUBSPOT_API_KEY, WORKSHEET_ID e SHEET_TITLE.
 Para isso, siga as seguintes instruções para conseguir essas informações.
 
