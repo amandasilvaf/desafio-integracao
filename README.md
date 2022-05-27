@@ -46,6 +46,7 @@ Conta no Hubspot.
 <br>WORKSHEET_ID = "the id of your google spreadsheet comes here."
 <br>SHEET_TITLE = "the title of your google spreadsheet comes here." 
 <br>
+<br>
 Você deverá setar esses valores, ou seja, atribuir valores reais às variáveis HUBSPOT_API_KEY, WORKSHEET_ID e SHEET_TITLE.
 Para isso, siga as seguintes instruções para conseguir essas informações.
 
@@ -96,7 +97,7 @@ O valor da variável SHEET_TITLE deve ser exatamente igual ao nome da folha. Nes
 SHEET_TITLE = "Página1" 
 
 
-## Pronto, agora suas variáveis de ambiente estão setadas. Salve as alterações do arquivo .env, e feche-o.
+##### Pronto, agora suas variáveis de ambiente estão setadas. Salve as alterações do arquivo .env, e feche-o.
 
 
 ### Atenção!!!
@@ -205,10 +206,35 @@ Vá até a pasta em que o arquivo foi baixado e o renomeie para credentials.json
 Agora mova esse arquivo para dentro da pasta deste projeto.
         
 
+
 #### OBS: Este arquivo "credentials.json" contém as credenciais de acesso da aplicação aos serviços google. Será necessário para a aplicação ter acesso à sua planilha google.
+
+
+6 - Agora precisamos ativar a API do Google Spreadsheet:
+<br>Acesse novamente https://console.cloud.google.com/
+
+Clique em Paine:
+![alt text](images/painel-cloud.png)
+
+
+No menu lateral esquerdo, clique em "Apis e serviços" -> "Api e serviços ativados":
+![alt text](images/apis-e-servicos.png)
+
+Clique em Ativar Apis e Serviços:
+![alt text](images/ativar-api.png)
+
+Busque por "Spreeadsheet"
+![alt text](images/buscar-api.png)
+
+Clique em Google Sheets API
+![alt text](images/spreadhsheet.png)
+
+Clique em "Ativar", nesse exemplo o botão está escrito "gerenciar" porque já está ativo.
+![alt text](images/ativar-api-spreadhsheet.png)
+
     
 
-6 - Só faltar fazermos com que sua planilha google dê acesso de edição a esta aplicação.
+7 - Só faltar fazermos com que sua planilha google dê acesso de edição a esta aplicação.
 
 Copie o email gerado no credentials.json:
     ![alt text](images/client-email-google-account.png)
@@ -221,7 +247,7 @@ Abra sua planilha google e clique em "Compartilhar". Em seguida cole o client_em
 ### Agora esta aplicação já está com todas as informações e permissões necessárias para integrar os contatos da sua planilha google com sua conta no Hubspot.
 
 
-7 - Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
+8 - Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
 Esse comando iniciará a aplicação.
 
 Os contatos da sua planilha serão cadastrados na sua lista de Contatos do Hubspot.
