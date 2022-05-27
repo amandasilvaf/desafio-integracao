@@ -88,7 +88,7 @@ Abra sua planilha google, com seus contatos preenchidos, e capture a sequência 
 WORKSHEET_ID = "the id of your google spreadsheet comes here."
 
 
-##### 4.3
+#### 4.3
 SHEET_TITLE :
 A sua planilha google pode conter várias "folhas", conforme ilustra a figura a seguir.
 ![alt text](images/sheet-title.png)
@@ -104,38 +104,48 @@ SHEET_TITLE = "Página1"
 #### Este projeto já está com uma credencial google importada (credentials.json). Para que o desafio possa ser executado sem que haja necessidade dessa configuração. Porém essa não é uma boa prática de programação e segurança. Portanto, em 15 dias irei tirar esse arquivo deste repositório (em 09/06/22). E, a partir de então, será necessário configurar uma conta de serviço google e importá-la neste projeto. Para isso, siga as instruções do item 5. 
 
 
-5 => Configurar as credenciais do Google Cloud. Você precisará criar uma Conta de Serviço e uma chave de acesso. 
+#### 5 
+Configurar as credenciais do Google Cloud. Você precisará criar uma Conta de Serviço e uma chave de acesso. 
 
 Acesse o site https://cloud.google.com/
+
 Caso sua conta google não esteja logada, você deverá:
-        Clicar em "Fazer Login", no menu. Conforme indicado na figura a seguir:
-        ![alt text](images/login-google-cloud.png)
+Clicar em "Fazer Login", no menu. Conforme indicado na figura a seguir:
+    ![alt text](images/login-google-cloud.png)
             
-        Selecionar sua conta google.
-        Inserir sua senha e fazer o login.
+
+Selecionar sua conta google.
+Inserir sua senha e fazer o login.
             
 Agora, no ambiente logado, clique no menu "Console":
         ![alt text](images/console-cloud.png)
                 
+
 Agora, na Google Cloud Platform, clique para selecionar um projeto:
         ![alt text](images/selecione-projeto.png)
                 
+
 Caso não tenha nenhum projeto criado, clique em "novo projeto". Caso já tenha projeto criado, selecione. 
         ![alt text](images/selecione-ou-crie.png)
                 
+
 Caso tenha clicado em novo projeto, dê um nome ao projeto e clique em "criar"
         ![alt text](images/cria-novo-projeto.png)
                 
+
 Você será redirecionado para a tela anterior. Então clique em "Selecionar um projeto", e selecione o projeto.
         ![alt text](images/clica-no-projeto.png)
                 
+
 Você será redirecionado novamente para a página anterior, porém agora o projeto está carregado. Então clique no menu de informações, e em seguida em "Configurações do projeto":
         ![alt text](images/clica-menu-informacoes.png)
         ![alt text](images/configuracoes-projeto.png)
                 
+
 Agora, no menu lateral esquerdo, clique em "Contas de serviço":
         ![alt text](images/menu-contas-de-servicos.png)
-                
+
+
 Clique em "Criar Conta de Serviço":
         ![alt text](images/criar-conta-servico.png)
 
@@ -143,53 +153,64 @@ Passo 1:
                  
 Preencha o nome, e então o id será preenchido automaticamente. Preencha a descrição da conta
 Clique em "Criar e continuar":
-        ![alt text](images/criando-conta-servico-1.png)
+    ![alt text](images/criando-conta-servico-1.png)
                     
+
 Exemplo:
-        ![alt text](images/exemplo-conta-servico.png)
+    ![alt text](images/exemplo-conta-servico.png)
+
+
 
 Passo 2:
-        Selecionar Papel.  
-        ![alt text](images/selecionar-papel.png)
+Selecionar Papel.  
+    ![alt text](images/selecionar-papel.png)
                     
-        Acesso rápido : selecione "Básico" e depois o papel "Proprietário"
-        ![alt text](images/proprietario.png)
+Acesso rápido : selecione "Básico" e depois o papel "Proprietário"
+    ![alt text](images/proprietario.png)
                     
-        Clique em "continuar.
-        ![alt text](images/proprietario-continuar.png)
+Clique em "continuar.
+    ![alt text](images/proprietario-continuar.png)
 
 Passo 3:
-        Não é necessário preencher os campos, apenas clique em "concluir".
-        ![alt text](images/concluir-conta-servico.png)
+    Não é necessário preencher os campos, apenas clique em "concluir".
+    ![alt text](images/concluir-conta-servico.png)
 
         
 Agora, no painel das contas de serviços, clique sob a conta de serviço recém criada:
-        ![alt text](images/clica-conta-servico.png)
+    ![alt text](images/clica-conta-servico.png)
+
 
 Agora clique em "CHAVES":
-        ![alt text](images/chaves.png)
+    ![alt text](images/chaves.png)
+
 
 Clique em "ADICIONAR CHAVE"
         ![alt text](images/adicionar-chave.png)
 
+
 E, em seguida, em "Criar nova chave"
         ![alt text](images/criar-nova-chave.png)
+
 
 Tipo de chave: JSON
         Clique em "CRIAR".
         ![alt text](images/cria-nova-chave.png)
 
+
 Será exibido um alerta de que a chave privada foi salva no seu computador, e um arquivo .json será baixado automaticamente em seu computador:
         ![alt text](images/chave-salva-json.png)
+
 
 Vá até a pasta em que o arquivo foi baixado e o renomeie para credentials.json.
 
 Agora mova esse arquivo para dentro da pasta deste projeto.
         
+
 #### OBS: Este arquivo "credentials.json" contém as credenciais de acesso da aplicação aos serviços google. Será necessário para a aplicação ter acesso à sua planilha google.
     
 
-6 => Só faltar fazermos com que sua planilha google dê acesso de edição a esta aplicação.
+#### 6 
+Só faltar fazermos com que sua planilha google dê acesso de edição a esta aplicação.
 
 Copie o email gerado no credentials.json:
     ![alt text](images/client-email-google-account.png)
@@ -202,11 +223,12 @@ Abra sua planilha google e clique em "Compartilhar". Em seguida cole o client_em
 ### Agora esta aplicação já está com todas as informações e permissões necessárias para integrar os contatos da sua planilha google com sua conta no Hubspot.
 
 
-7 => Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
-    Esse comando iniciará a aplicação.
+#### 7
+Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
+Esse comando iniciará a aplicação.
 
-    Os contatos da sua planilha serão cadastrados na sua lista de Contatos do Hubspot.
-    Caso a planilha contenha algum contato e-mail inválido, não corporativo, ou já importado no hubspot, a aplicação não os enviará para o hubspot. 
+Os contatos da sua planilha serão cadastrados na sua lista de Contatos do Hubspot.
+Caso a planilha contenha algum contato e-mail inválido, não corporativo, ou já importado no hubspot, a aplicação não os enviará para o hubspot. 
 
 
 
