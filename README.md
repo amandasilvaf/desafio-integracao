@@ -1,4 +1,8 @@
 # Desafio Integração 
+<div>
+   Esta aplicação irá importar os contatos da sua planilha na sua conta do Hubspot.
+</div>
+
 
 ## Requisitos: 
 
@@ -16,8 +20,15 @@ Conta no Hubspot.
 </li>
 </ul>
 </div>
+
 <div>
-   Esta aplicação irá importar os contatos da sua planilha na sua conta do Hubspot.
+Passo a passo resumido:
+1 - clonar projeto
+2 - renomear .env-example para .env
+3 - seguir as instruções do item 3 para configurar a .env
+4 - rodar npm install
+5 - rodar npm run start
+6 - Criar credenciais de conta de serviço google e importá-la neste projeto com o nome "credentials.json" (apenas a partir de 09/06/2022).
 </div>
 
 
@@ -49,7 +60,7 @@ Conta no Hubspot.
         ![alt text](images/hubspot-clica-chave-api.png)
 
         Caso você nunca tenha gerado uma Chave de Api na plataforma, irá aparecer um botão para criar Chave de Api. Clique nele e copie a chave gerada. Caso já tenha Chave de Api cadastrada, apenas clique em "Mostrar" e copie a chave.
-        Pronto, agora você já tem o valor da sua chave de api da hubspot. 
+        Pronto, agora você já tem o valor da s/ua chave de api da hubspot. 
         ![alt text](images/hubspot-chaves-api.png)
 
         Volte no arquivo .env e cole a chave dentro das aspas:
@@ -70,6 +81,10 @@ Conta no Hubspot.
         SHEET_TITLE = "Página1" 
 
 Pronto, agora suas variáveis de ambiente estão setadas. Salve as alterações do arquivo .env, e feche-o.
+
+
+### Atenção!!!
+#### Este projeto já está com uma credencial google importada (credentials.json). Para que o desafio possa ser executado sem que haja necessidade dessa configuração. Porém essa não é uma boa prática de programação e segurança. Portanto, em 15 dias irei tirar esse arquivo deste repositório (em 09/06/22). E, a partir de então, será necessário configurar uma conta de serviço google e importá-la neste projeto. Para isso, siga as instruções do item 5. 
 
 
 5 => Configurar as credenciais do Google Cloud. Você precisará criar uma Conta de Serviço e uma chave de acesso. 
@@ -147,14 +162,14 @@ Pronto, agora suas variáveis de ambiente estão setadas. Salve as alterações 
         Será exibido um alerta de que a chave privada foi salva no seu computador, e um arquivo .json será baixado automaticamente em seu computador:
         ![alt text](images/chave-salva-json.png)
 
-6 => Vá até a pasta em que o arquivo foi baixado e o renomeie para credentials.json.
+    Vá até a pasta em que o arquivo foi baixado e o renomeie para credentials.json.
 
-7 => Agora mova esse arquivo para dentro da pasta deste projeto.
+    Agora mova esse arquivo para dentro da pasta deste projeto.
         
     OBS: Este arquivo "credentials.json" contém as credenciais de acesso da aplicação aos serviços google. Será necessário para a aplicação ter acesso à sua planilha google.
     
 
-8 => Só faltar fazermos com que sua planilha google dê acesso de edição a esta aplicação.
+6 => Só faltar fazermos com que sua planilha google dê acesso de edição a esta aplicação.
 
         Copie o email gerado no credentials.json:
         ![alt text](images/client-email-google-account.png)
@@ -167,15 +182,18 @@ Pronto, agora suas variáveis de ambiente estão setadas. Salve as alterações 
     Agora esta aplicação já está com todas as informações e permissões necessárias para integrar os contatos da sua planilha google com sua conta no Hubspot.
 
 
-9 => Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
+7 => Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
     Esse comando iniciará a aplicação.
 
     Os contatos da sua planilha serão cadastrados na sua lista de Contatos do Hubspot.
     Caso a planilha contenha algum contato e-mail inválido, não corporativo, ou já importado no hubspot, a aplicação não os enviará para o hubspot. 
 
 
---------------------------------------------------
-CONSULTAS: 
+
+
+
+
+### REFERÊNCIAS
 
 link de ajuda para criação da conta de serviço do google:
 https://cloud.google.com/docs/authentication/production?hl=pt-br
