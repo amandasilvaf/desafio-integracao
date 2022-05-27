@@ -22,13 +22,13 @@ Conta no Hubspot.
 </div>
 
 <div>
-Passo a passo resumido:
-1 - clonar projeto
-2 - renomear .env-example para .env
-3 - seguir as instruções do item 3 para configurar a .env
-4 - rodar npm install
-5 - rodar npm run start
-6 - Criar credenciais de conta de serviço google e importá-la neste projeto com o nome "credentials.json" (apenas a partir de 09/06/2022).
+<h6>Passo a passo resumido:</h6>
+<li>1 - clonar projeto</li>
+<li>2 - renomear .env-example para .env</li>
+<li>3 - seguir as instruções do item 3 para configurar a .env</li>
+<li>4 - rodar npm install</li>
+<li>5 - rodar npm run start</li>
+<li>6 - Criar credenciais de conta de serviço google e importá-la neste projeto com o nome "credentials.json" (apenas a partir de 09/06/2022).</li>
 </div>
 
 
