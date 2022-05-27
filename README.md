@@ -22,7 +22,7 @@ Conta no Hubspot.
 </div>
 
 <div>
-<h6>Passo a passo resumido:</h6>
+<h5>Passo a passo resumido:</h5>
 <li>1 - clonar projeto</li>
 <li>2 - renomear .env-example para .env</li>
 <li>3 - seguir as instruções do item 3 para configurar a .env</li>
@@ -32,16 +32,15 @@ Conta no Hubspot.
 </div>
 
 
-## Passo a passo para configuração: 
+### Passo a passo para configuração: 
 
-#### 1 
-Após clonar o projeto, acessar a pasta do projeto, via terminal, e rodar o comando "npm install", para instalar as dependências do projeot.
+1 - Após clonar o projeto, acessar a pasta do projeto, via terminal, e rodar o comando "npm install", para instalar as dependências do projeot.
 
-#### 2
-Renomear o arquivo .env-example para .env
 
-#### 3
-No arquivo .env estão definidas 3 variáveis de ambientes:
+2- Renomear o arquivo .env-example para .env
+
+
+3- No arquivo .env estão definidas 3 variáveis de ambientes:
 
    HUBSPOT_API_KEY = "your hubspot apikey comes here"
    WORKSHEET_ID = "the id of your google spreadsheet comes here."
@@ -50,11 +49,11 @@ No arquivo .env estão definidas 3 variáveis de ambientes:
 Você deverá setar esses valores, ou seja, atribuir valores reais às variáveis HUBSPOT_API_KEY, WORKSHEET_ID e SHEET_TITLE.
 Para isso, siga as seguintes instruções para conseguir essas informações.
 
-#### 4
-Capturando os valores a serem atribuídos às variáveis de ambiente: 
 
-#### 4.1 
-HUBSPOT_API_KEY :
+4- Capturando os valores a serem atribuídos às variáveis de ambiente: 
+
+
+4-1 HUBSPOT_API_KEY :
 
 Acesse o site https://app.hubspot.com , e faça o login. 
 
@@ -78,8 +77,8 @@ Pronto, agora você já tem o valor da s/ua chave de api da hubspot.
 Volte no arquivo .env e cole a chave dentro das aspas:
 HUBSPOT_API_KEY = "your hubspot apikey comes here".
 
-#### 4.2
-WORKSHEET_ID :
+
+4.2 - WORKSHEET_ID :
 
 Abra sua planilha google, com seus contatos preenchidos, e capture a sequência de caracteres que inicia após o /d/ , e termina antes do /edit
 
@@ -88,8 +87,8 @@ Abra sua planilha google, com seus contatos preenchidos, e capture a sequência 
 WORKSHEET_ID = "the id of your google spreadsheet comes here."
 
 
-#### 4.3
-SHEET_TITLE :
+
+4.3 - SHEET_TITLE :
 A sua planilha google pode conter várias "folhas", conforme ilustra a figura a seguir.
 ![alt text](images/sheet-title.png)
 
@@ -104,8 +103,8 @@ SHEET_TITLE = "Página1"
 #### Este projeto já está com uma credencial google importada (credentials.json). Para que o desafio possa ser executado sem que haja necessidade dessa configuração. Porém essa não é uma boa prática de programação e segurança. Portanto, em 15 dias irei tirar esse arquivo deste repositório (em 09/06/22). E, a partir de então, será necessário configurar uma conta de serviço google e importá-la neste projeto. Para isso, siga as instruções do item 5. 
 
 
-#### 5 
-Configurar as credenciais do Google Cloud. Você precisará criar uma Conta de Serviço e uma chave de acesso. 
+
+5- Configurar as credenciais do Google Cloud. Você precisará criar uma Conta de Serviço e uma chave de acesso. 
 
 Acesse o site https://cloud.google.com/
 
@@ -209,8 +208,7 @@ Agora mova esse arquivo para dentro da pasta deste projeto.
 #### OBS: Este arquivo "credentials.json" contém as credenciais de acesso da aplicação aos serviços google. Será necessário para a aplicação ter acesso à sua planilha google.
     
 
-#### 6 
-Só faltar fazermos com que sua planilha google dê acesso de edição a esta aplicação.
+6 - Só faltar fazermos com que sua planilha google dê acesso de edição a esta aplicação.
 
 Copie o email gerado no credentials.json:
     ![alt text](images/client-email-google-account.png)
@@ -223,8 +221,7 @@ Abra sua planilha google e clique em "Compartilhar". Em seguida cole o client_em
 ### Agora esta aplicação já está com todas as informações e permissões necessárias para integrar os contatos da sua planilha google com sua conta no Hubspot.
 
 
-#### 7
-Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
+7 - Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
 Esse comando iniciará a aplicação.
 
 Os contatos da sua planilha serão cadastrados na sua lista de Contatos do Hubspot.
