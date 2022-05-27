@@ -40,22 +40,21 @@ Conta no Hubspot.
 
 3 => No arquivo .env estão definidas 3 variáveis de ambientes:
 
-    HUBSPOT_API_KEY = "your hubspot apikey comes here"
-    WORKSHEET_ID = "the id of your google spreadsheet comes here."
-    SHEET_TITLE = "the title of your google spreadsheet comes here." 
+HUBSPOT_API_KEY = "your hubspot apikey comes here"
+WORKSHEET_ID = "the id of your google spreadsheet comes here."
+SHEET_TITLE = "the title of your google spreadsheet comes here." 
 
-    Você deverá setar esses valores, ou seja, atribuir valores reais às variáveis HUBSPOT_API_KEY, WORKSHEET_ID e SHEET_TITLE.
-    Para isso, siga as seguintes instruções para conseguir essas informações.
+Você deverá setar esses valores, ou seja, atribuir valores reais às variáveis HUBSPOT_API_KEY, WORKSHEET_ID e SHEET_TITLE.
+Para isso, siga as seguintes instruções para conseguir essas informações.
 
 4 => Capturando os valores a serem atribuídos às variáveis de ambiente: 
+4.1 => HUBSPOT_API_KEY :
 
-    4.1 => HUBSPOT_API_KEY :
+Acesse o site https://app.hubspot.com , e faça o login. 
 
-        Acesse o site https://app.hubspot.com , e faça o login. 
-
-        Clique no botão de configurações, localizado no menu superior. 
-        <img src="images/hubspot-botao-config.png"></img>
-        ![alt text](images/hubspot-botao-config.png)
+Clique no botão de configurações, localizado no menu superior. 
+<img src="images/hubspot-botao-config.png"></img>
+![alt text](images/hubspot-botao-config.png)
 
         Agora role pelo menu lateral até "Configurações de conta", clique no submenu dropdown "Integrações" e selecione "Chave de API":
         ![alt text](images/hubspot-clica-chave-api.png)
