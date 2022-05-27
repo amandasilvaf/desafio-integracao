@@ -1,6 +1,6 @@
 # Desafio Integração 
 <div>
-   Esta aplicação irá importar os contatos da sua planilha na sua conta do Hubspot.
+   Esta aplicação irá importar os contatos da sua planilha google spreadsheet na sua conta do Hubspot.
 </div>
 
 
