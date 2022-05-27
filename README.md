@@ -1,6 +1,6 @@
-# desafio-integracao
+# Desafio Integração 
 
-Requisitos: 
+## Requisitos: 
 
 node v10.24.1 ou superior;
 
@@ -9,8 +9,8 @@ company, firstname, lastname, email, phone, website.
 
 Conta no Hubspot. 
 
-<hr>
-Passo a passo para configuração: 
+
+## Passo a passo para configuração: 
 
 1 => Após clonar o projeto, acessar a pasta do projeto, via terminal, e rodar o comando "npm install", para instalar as dependências do projeot.
 
@@ -154,7 +154,7 @@ Pronto, agora suas variáveis de ambiente estão setadas. Salve as alterações 
     
 
     Agora esta aplicação já está com todas as informações e permissões necessárias para integrar os contatos da sua planilha google com sua conta no Hubspot.
-<hr>
+
 
 9 => Agora, dentro da pasta deste projeto, via terminal, rode o comando "npm run start".
     Esse comando iniciará a aplicação.
@@ -183,7 +183,7 @@ Company Email Validator
 https://www.npmjs.com/package/company-email-validator
 
 
-Manipulando Google Spreadsheet com Node.js (v1.js)
+Manipulando Google Spreadsheet com Node.js (v1)
 https://jvvoliveira.medium.com/manipulando-google-sheets-com-node-js-4a551c68b270
 
 
