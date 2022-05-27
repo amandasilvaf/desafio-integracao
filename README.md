@@ -315,29 +315,3 @@ https://www.npmjs.com/package/email-validator
 Company Email Validator
 https://www.npmjs.com/package/company-email-validator
 
-
-Manipulando Google Spreadsheet com Node.js (v1)
-https://jvvoliveira.medium.com/manipulando-google-sheets-com-node-js-4a551c68b270
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    
-                        
