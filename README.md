@@ -2,12 +2,23 @@
 
 ## Requisitos: 
 
+<div>
+<ul>
+<li>
 node v10.24.1 ou superior;
-
-Planilha google de contatos, com as seguintes colunas preenchidas.
-company, firstname, lastname, email, phone, website. 
-
+</li>
+<li>
+<p>Planilha google spreadsheets de contatos, com as seguintes colunas preenchidas:</p>
+<p>company, firstname, lastname, email, phone, website. </p>
+</li>
+<li>
 Conta no Hubspot. 
+</li>
+</ul>
+</div>
+<div>
+   Esta aplicação irá importar os contatos da sua planilha na sua conta do Hubspot.
+</div>
 
 
 ## Passo a passo para configuração: 
