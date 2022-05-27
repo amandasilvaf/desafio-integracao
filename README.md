@@ -82,7 +82,8 @@ HUBSPOT_API_KEY = "your hubspot apikey comes here".
 WORKSHEET_ID :
 
 Abra sua planilha google, com seus contatos preenchidos, e capture a sequência de caracteres que inicia após o /d/ , e termina antes do /edit
-[alt text](images/worksheet-id.png)
+
+![alt text](images/worksheet-id.png)
 
 WORKSHEET_ID = "the id of your google spreadsheet comes here."
 
