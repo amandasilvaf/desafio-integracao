@@ -34,39 +34,52 @@ Conta no Hubspot.
 
 ## Passo a passo para configuração: 
 
-1 => Após clonar o projeto, acessar a pasta do projeto, via terminal, e rodar o comando "npm install", para instalar as dependências do projeot.
+#### 1 
+Após clonar o projeto, acessar a pasta do projeto, via terminal, e rodar o comando "npm install", para instalar as dependências do projeot.
 
-2 => Renomear o arquivo .env-example para .env
+#### 2
+Renomear o arquivo .env-example para .env
 
-3 => No arquivo .env estão definidas 3 variáveis de ambientes:
+#### 3
+No arquivo .env estão definidas 3 variáveis de ambientes:
 
-HUBSPOT_API_KEY = "your hubspot apikey comes here"
-WORKSHEET_ID = "the id of your google spreadsheet comes here."
-SHEET_TITLE = "the title of your google spreadsheet comes here." 
+   HUBSPOT_API_KEY = "your hubspot apikey comes here"
+   WORKSHEET_ID = "the id of your google spreadsheet comes here."
+   SHEET_TITLE = "the title of your google spreadsheet comes here." 
 
 Você deverá setar esses valores, ou seja, atribuir valores reais às variáveis HUBSPOT_API_KEY, WORKSHEET_ID e SHEET_TITLE.
 Para isso, siga as seguintes instruções para conseguir essas informações.
 
-4 => Capturando os valores a serem atribuídos às variáveis de ambiente: 
-4.1 => HUBSPOT_API_KEY :
+#### 4
+Capturando os valores a serem atribuídos às variáveis de ambiente: 
+
+#### 4.1 
+HUBSPOT_API_KEY :
 
 Acesse o site https://app.hubspot.com , e faça o login. 
 
 Clique no botão de configurações, localizado no menu superior. 
+
 ![alt text](images/hubspot-botao-config.png)
 
-Agora role pelo menu lateral até "Configurações de conta", clique no submenu dropdown "Integrações" e selecione "Chave de API":
+
+
+Agora role pelo menu lateral até "Configurações de conta", clique no submenu dropdown "Integrações" e
+selecione "Chave de API":
+
 ![alt text](images/hubspot-clica-chave-api.png)
 
 Caso você nunca tenha gerado uma Chave de Api na plataforma, irá aparecer um botão para criar Chave de Api. Clique nele e copie a chave gerada. Caso já tenha Chave de Api cadastrada, apenas clique em "Mostrar" e copie a chave.
 
 Pronto, agora você já tem o valor da s/ua chave de api da hubspot. 
+
 ![alt text](images/hubspot-chaves-api.png)
 
 Volte no arquivo .env e cole a chave dentro das aspas:
 HUBSPOT_API_KEY = "your hubspot apikey comes here".
 
-4.2 => WORKSHEET_ID :
+#### 4.2
+WORKSHEET_ID :
 
 Abra sua planilha google, com seus contatos preenchidos, e capture a sequência de caracteres que inicia após o /d/ , e termina antes do /edit
 [alt text](images/worksheet-id.png)
@@ -74,7 +87,8 @@ Abra sua planilha google, com seus contatos preenchidos, e capture a sequência 
 WORKSHEET_ID = "the id of your google spreadsheet comes here."
 
 
-4.3 => SHEET_TITLE :
+##### 4.3
+SHEET_TITLE :
 A sua planilha google pode conter várias "folhas", conforme ilustra a figura a seguir.
 ![alt text](images/sheet-title.png)
 
